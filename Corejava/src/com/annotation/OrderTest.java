@@ -32,7 +32,7 @@ class OrderTest
 {
 	public static void main(String [] args) throws Exception
 	{
-		Class c=Class.forName("com.annotation.Order");
+		Class c = Class.forName("com.annotation.Order");
 		Method m[]=c.getDeclaredMethods();
 		for(int i=0;i<m.length;i++)
 		{
@@ -41,7 +41,7 @@ class OrderTest
 			for(int j=0;j<annotations.length;j++)
 			{
 				String s=annotations[j].annotationType().getName();
-				if(s.equals("Getter"))
+				if(s.equals("com.annotation.Getter"))
 				{
 					String temp=m[i].getName();
 					String temp1=temp.substring(3);
