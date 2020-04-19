@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+	<title>Satwik Advertisers</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="css/search.css">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<a class="navbar-brand" href="home.html"><strong>Satwik Advertisers</strong></a>
+
+  		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    		<ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="register" id="reghead">
+				<h1 class="display-3">Search Advertisement(s)</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="reg">
+			<form>
+  				<div class="form-group">
+    				<label for="stext">Search Text</label>
+    				<input type="text" class="form-control" id="stext" placeholder="Search Text">
+  				</div>
+  				<div class="form-group">
+    				<label for="cat">Category</label>
+    				  <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="hardware">
+                  <label class="form-check-label" for="Hardware">
+                  Hardware
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="software">
+                  <label class="form-check-label" for="Software">
+                  Software
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="res">
+                  <label class="form-check-label" for="RealEstate">
+                  Real Estate
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fur">
+                  <label class="form-check-label" for="Furniture">
+                  Furniture
+                  </label>
+              </div>
+  				</div>
+  				<div class="form-group">
+    				<label for="postedby">Posted by</label>
+    				<input type="text" class="form-control" id="postedby" placeholder="Posted by">
+  				</div>
+  				<div class="form-group">
+    				<label for="dcond">Date Condition</label>
+    				<input type="text" class="form-control" id="dcond" placeholder="Date Condition">
+  				</div>
+  				<div class="form-group">
+    				<label for="ond">On Date</label>
+    				<input type="text" class="form-control" id="ond" placeholder="On Date">
+  				</div>
+          <div class="form-group">
+            <label for="fd">From Date</label>
+            <input type="text" class="form-control" id="fd" placeholder="From Date">
+          </div>
+          <div class="form-group">
+            <label for="td">To Date</label>
+            <input type="text" class="form-control" id="td" placeholder="To Date">
+          </div>
+  				<div class="form-group">
+    				<label for="sort">Sort by</label>
+    				<select name="sortby" class="custom-select">
+              <option selected>Sort by</option>
+              <option value="tasc">Title: Ascending</option>
+              <option value="tdesc">Title: Descending</option>
+              <option value="dasc">Date: Ascending</option>
+              <option value="ddesc">Date: Descending</option>
+              <option value="none">None</option>
+            </select>
+  				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="sbtn">
+      <a href="#!" class="btn btn-info">Search</a>
+		</div>
+	</div>	
+</body>
+</html>

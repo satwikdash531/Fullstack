@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+	<title>Satwik Advertisers</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="css/updel.css">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<a class="navbar-brand" href="#!"><strong>Satwik Advertisers</strong></a>
+
+  		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    		<ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="userpage.html">Home <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item active">
+      				<a class="nav-link" href="profile.html">My Profile <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item active">
+      				<a class="nav-link" href="login.html">Logout <span class="sr-only">(current)</span></a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="register" id="reghead">
+				<h1 class="display-3">Update or Delete an Ad</h1>
+			</div>
+		</div>
+	</div>
+  <div class="container">
+    <div class="form-action">
+            <label for="action">Select the Action</label>
+            <select name="action" class="custom-select">
+                  <option selected>Action</option>
+                  <option value="update">Update</option>
+                  <option value="delete">Delete</option>
+            </select>
+    </div>
+  </div>
+  <div class="container">
+		<div id="reg">
+			<form>
+  				<div class="form-group">
+    				<label for="pid">Post Id</label>
+    				<input type="text" class="form-control" id="pid" placeholder="Post Id">
+  				</div>
+  				<div class="form-group">
+    				<label for="status">Status</label>
+    				<select name="status" class="custom-select">
+              			<option selected>Status</option>
+			            <option value="open">Open</option>
+                  <option value="closed">Closed</option>
+            		</select>
+            	</div>
+  				<div class="form-group">
+    				<label for="title">Title</label>
+    				<input type="text" class="form-control" id="title" placeholder="Title">
+    			</div>
+    			<div class="form-group">
+    				<label for="name">Name</label>
+    				<input type="text" class="form-control" id="name" placeholder="Name">
+    			</div>
+    			<div class="form-group">
+    				<label for="cat">Category</label>
+    				<select name="cat" class="custom-select">
+              			<option selected>Category</option>
+			            <option value="realestate">Real Estate</option>
+			            <option value="furniture">Furniture</option>
+			            <option value="hardware">Hardware</option>
+            		</select>
+            	</div>
+				<div class="form-group">
+    				<label for="desc">Description</label>
+    				<input type="text" class="form-control" id="desc" placeholder="Description">
+  				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="regbtn">
+      <a href="#!" class="btn btn-primary">Update/Delete Ad</a>
+		</div>
+	</div>	
+</body>
+</html>
